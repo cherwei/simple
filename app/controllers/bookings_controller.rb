@@ -33,7 +33,7 @@ class BookingsController < ApplicationController
       flash[:notice] = 'This booking had been claimed.'
       redirect_to bookings_url
     else
-      @booking.update_attribute!(:claimed, true)
+      @booking.update_attributes!({:claimed => true})
       flash[:notice] = "#{@booking.phone} claimed!"
       redirect_to bookings_url
     end

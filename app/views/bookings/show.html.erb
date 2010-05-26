@@ -2,6 +2,6 @@
 <p>Email: <%= @booking.email %></p>
 <p>Phone: <%= @booking.phone %></p>
 
-<% form_for :booking, :url => booking_path(@booking) do |form| %>
+<% form_for :booking, :url => booking_path(@booking), :html => {:method => :put} do |form| %>
   <%= form.submit 'Claim Now!!!'%>
 <% end %>

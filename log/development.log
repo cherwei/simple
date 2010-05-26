@@ -100,3 +100,183 @@ Migrating to CreateBookings (20100526040341)
   [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
   [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateBookings (20100526040341)
+  [4;36;1mSQL (108.9ms)[0m   [0;1mCREATE TABLE `bookings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `name` varchar(255), `email` varchar(255), `phone` varchar(255), `claimed` tinyint(1) DEFAULT 0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100526040341')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (8.7ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mdescribe `bookings`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `bookings`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-26 16:19:29) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-26 16:19:44) [POST]
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"FAzT/7kMNkAMTRkeV3RP0qxlNdXrfF6XewKnpNYOcmI=", "booking"=>{"phone"=>"123123123"}}
+  [4;36;1mBooking Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (25.1ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '123123123') LIMIT 1[0m
+Redirected to http://localhost:3000/bookings
+Completed in 48ms (DB: 27) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-26 16:19:44) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-26 16:19:51) [POST]
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"FAzT/7kMNkAMTRkeV3RP0qxlNdXrfF6XewKnpNYOcmI=", "booking"=>{"phone"=>"0133764976"}}
+  [4;36;1mBooking Columns (17.6ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (12.7ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0133764976') LIMIT 1[0m
+Redirected to http://localhost:3000/bookings/2
+Completed in 37ms (DB: 31) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#show (for 127.0.0.1 at 2010-05-26 16:19:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBooking Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.3ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering bookings/show
+Completed in 14ms (View: 7, DB: 2) | 200 OK [http://localhost/bookings/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-26 16:20:05) [POST]
+  Parameters: {"commit"=>"Claim Now!!!", "authenticity_token"=>"FAzT/7kMNkAMTRkeV3RP0qxlNdXrfF6XewKnpNYOcmI="}
+
+ActionController::MethodNotAllowed (Only get, put, and delete requests are allowed.):
+  
+
+Rendered rescues/_trace (29.1ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (method_not_allowed)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#show (for 127.0.0.1 at 2010-05-26 16:21:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBooking Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.6ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering bookings/show
+Completed in 81ms (View: 73, DB: 2) | 200 OK [http://localhost/bookings/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-26 16:21:17) [POST]
+  Parameters: {"commit"=>"Claim Now!!!", "authenticity_token"=>"FAzT/7kMNkAMTRkeV3RP0qxlNdXrfF6XewKnpNYOcmI="}
+
+ActionController::MethodNotAllowed (Only get, put, and delete requests are allowed.):
+  
+
+Rendered rescues/_trace (27.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (method_not_allowed)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#show (for 127.0.0.1 at 2010-05-26 16:21:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mBooking Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering bookings/show
+Completed in 14ms (View: 7, DB: 2) | 200 OK [http://localhost/bookings/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#update (for 127.0.0.1 at 2010-05-26 16:21:27) [PUT]
+  Parameters: {"commit"=>"Claim Now!!!", "authenticity_token"=>"FAzT/7kMNkAMTRkeV3RP0qxlNdXrfF6XewKnpNYOcmI=", "id"=>"2"}
+  [4;36;1mBooking Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.7ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 2) [0m
+
+NoMethodError (undefined method `update_attribute!' for #<Booking:0x1035a7fe0>):
+  app/controllers/bookings_controller.rb:36:in `update'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#update (for 127.0.0.1 at 2010-05-26 16:21:41) [PUT]
+  Parameters: {"commit"=>"Claim Now!!!", "authenticity_token"=>"FAzT/7kMNkAMTRkeV3RP0qxlNdXrfF6XewKnpNYOcmI=", "id"=>"2"}
+  [4;36;1mBooking Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.4ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 2) [0m
+  [4;36;1mSQL (46.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBooking Update (11.9ms)[0m   [0mUPDATE `bookings` SET `updated_at` = '2010-05-26 08:21:41', `claimed` = 1 WHERE `id` = 2[0m
+  [4;36;1mSQL (9.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/bookings
+Completed in 80ms (DB: 71) | 302 Found [http://localhost/bookings/2]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-26 16:21:42) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-26 16:21:59) [POST]
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"FAzT/7kMNkAMTRkeV3RP0qxlNdXrfF6XewKnpNYOcmI=", "booking"=>{"phone"=>"0133764976"}}
+  [4;35;1mBooking Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mBooking Load (0.3ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0133764976') LIMIT 1[0m
+Redirected to http://localhost:3000/bookings
+Completed in 8ms (DB: 2) | 302 Found [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-26 16:21:59) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-26 16:22:01) [POST]
+  Parameters: {"commit"=>"Go", "authenticity_token"=>"FAzT/7kMNkAMTRkeV3RP0qxlNdXrfF6XewKnpNYOcmI=", "booking"=>{"phone"=>"0133764976"}}
+  [4;35;1mBooking Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mBooking Load (0.4ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0133764976') LIMIT 1[0m
+Redirected to http://localhost:3000/bookings
+Completed in 8ms (DB: 2) | 302 Found [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-26 16:22:01) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/bookings]
