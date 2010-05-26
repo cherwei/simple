@@ -1,0 +1,6 @@
+<% form_for :booking, :url => bookings_path do |form| %>
+  <%= form.label :phone %>
+  <%= form.text_field :phone %>
+  
+  <%= form.submit 'Go' %>
+<% end %>

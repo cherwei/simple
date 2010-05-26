@@ -1,0 +1,7 @@
+<p>Name: <%= @booking.name %></p>
+<p>Email: <%= @booking.email %></p>
+<p>Phone: <%= @booking.phone %></p>
+
+<% form_for :booking, :url => booking_path(@booking) do |form| %>
+  <%= form.submit 'Claim Now!!!'%>
+<% end %>
