@@ -336,3 +336,64 @@ Migrating to AddIndexKeyToPhone (20100526095858)
   [4;35;1mSQL (25.7ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
   [4;36;1mSQL (2.0ms)[0m   [0;1mdescribe `bookings`[0m
   [4;35;1mSQL (5.0ms)[0m   [0mSHOW KEYS FROM `bookings`[0m
+  [4;36;1mSQL (73.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (20.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-27 14:18:21) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 169ms (View: 168, DB: 94) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-27 14:18:24) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"9bJTE9ZwRU+gbs01f/LD2eXmcntVSRaLopZFu8r4sWM=", "booking"=>{"phone"=>""}}
+  [4;36;1mBooking Columns (295.5ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (67.3ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '') LIMIT 1[0m
+Redirected to http://localhost:3000/bookings/677
+Completed in 424ms (DB: 363) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#show (for 127.0.0.1 at 2010-05-27 14:18:24) [GET]
+  Parameters: {"id"=>"677"}
+  [4;36;1mBooking Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (1.2ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 677) [0m
+Rendering template within layouts/application
+Rendering bookings/show
+Completed in 17ms (View: 9, DB: 3) | 200 OK [http://localhost/bookings/677]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-27 14:18:38) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"9bJTE9ZwRU+gbs01f/LD2eXmcntVSRaLopZFu8r4sWM=", "booking"=>{"phone"=>""}}
+Redirected to http://localhost:3000/bookings
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-27 14:18:38) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-27 14:18:40) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"9bJTE9ZwRU+gbs01f/LD2eXmcntVSRaLopZFu8r4sWM=", "booking"=>{"phone"=>""}}
+Redirected to http://localhost:3000/bookings
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-27 14:18:40) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/bookings]

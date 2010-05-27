@@ -4,15 +4,20 @@ class BookingsController < ApplicationController
   end
   
   def create
-    if @booking = Booking.find_by_phone(params[:booking][:phone])
-      if @booking.claimed?
-        flash[:notice] = 'This booking have been claimed.'
-        redirect_to bookings_url
+    unless params[:booking][:phone].blank?
+      if @booking = Booking.find_by_phone(params[:booking][:phone])
+        if @booking.claimed?
+          flash[:notice] = 'This booking have been claimed.'
+          redirect_to bookings_url
+        else
+          redirect_to booking_url(@booking)
+        end
       else
-        redirect_to booking_url(@booking)
+        flash[:notice] = 'Phone number not found or invalid'
+        redirect_to bookings_url
       end
     else
-      flash[:notice] = 'Phone number not found or invalid'
+      flash[:notice] = 'Phone number can not be blank.'
       redirect_to bookings_url
     end
   end
