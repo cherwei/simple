@@ -1,7 +1,15 @@
-<p>Name: <%= @booking.name %></p>
-<p>Email: <%= @booking.email %></p>
-<p>Phone: <%= @booking.phone %></p>
+<fieldset>
+  <legend>Verify Information</legend>
+  <label style="width: 100px">Name:</label><label><%= @booking.name %></label>
+  <div class="clear"></div>
+  <label style="width: 100px">Email:</label><label><%= @booking.email %></label>
+  <div class="clear"></div>
+  <label style="width: 100px">Phone:</label><label><%= @booking.phone %></label>
+  <div class="clear"></div>
+  <br />
+  <label style="font-size: 16px"><%= image_tag('exc.png', :style=> 'vertical-align: middle') %> verify that these information are correct before proceeding to claim</label>
+  <% form_for :booking, :url => booking_path(@booking), :html => {:method => :put} do |form| %>
+    <%= form.submit 'Claim', :style => "float: right"%>
+  <% end %>
 
-<% form_for :booking, :url => booking_path(@booking), :html => {:method => :put} do |form| %>
-  <%= form.submit 'Claim Now!!!'%>
-<% end %>
+</fieldset>

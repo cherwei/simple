@@ -6,13 +6,13 @@ class BookingsController < ApplicationController
   def create
     if @booking = Booking.find_by_phone(params[:booking][:phone])
       if @booking.claimed?
-        flash[:notice] = 'This booking had been claimed.'
+        flash[:notice] = 'This booking have been claimed.'
         redirect_to bookings_url
       else
         redirect_to booking_url(@booking)
       end
     else
-      flash[:notice] = 'Invalid phone number.'
+      flash[:notice] = 'Phone number not found or invalid'
       redirect_to bookings_url
     end
   end
@@ -20,7 +20,7 @@ class BookingsController < ApplicationController
   def show
     @booking = Booking.find(params[:id])
     if @booking.claimed?
-      flash[:notice] = 'This booking had been claimed.'
+      flash[:notice] = 'This booking have been claimed.'
       redirect_to bookings_url
     else
       render
@@ -30,7 +30,7 @@ class BookingsController < ApplicationController
   def update
     @booking = Booking.find(params[:id])
     if @booking.claimed?
-      flash[:notice] = 'This booking had been claimed.'
+      flash[:notice] = 'This booking have been claimed.'
       redirect_to bookings_url
     else
       @booking.update_attributes!({:claimed => true})
