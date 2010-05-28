@@ -1,7 +1,14 @@
 <% form_for :booking, :url => bookings_path, :html => {:id => 'claim-form'} do |form| %>
   <%= form.label :phone, 'Enter phone no:', :style => 'width: 180px; text-align: right' %>
   <%= form.text_field :phone, :class => 'phone-box' %>
+  
+  <div class="clear"></div>
+  <small style="display: block; padding-left: 190px; font-size: 12px; color: #999">Enter phone number without any symbols, or dashes, i.e. <strong>0123456789</strong></small>
+  <label style="width: 180px; text-align: right">OR</label>
+    <div class="clear"></div>
+  <%= form.label :email, 'Enter email:', :style => 'width: 180px; text-align: right' %>
+  <%= form.text_field :email %>
   <%= form.submit 'Search' %>
 <% end %>
 <div class="clear"></div>
-<small style="display: block; padding-left: 190px; font-size: 12px; color: #999">Enter phone number without any symbols, or dashes, i.e. <strong>0123456789</strong></small>
+<small style="display: block; padding-left: 190px; font-size: 12px; color: #999">Note: If you enter both email and phone number, only the phone number will be searched.</small>

@@ -1,0 +1,25 @@
+<% @bookings.each do |booking| %>
+  <p>
+    <fieldset>
+      <legend>Verify Information</legend>
+      <label style="width: 100px">Name:</label><label><%= booking.name %></label>
+      <div class="clear"></div>
+      <label style="width: 100px">Email:</label><label><%= booking.email %></label>
+      <div class="clear"></div>
+      <label style="width: 100px">Phone:</label><label><%= booking.phone %></label>
+      <div class="clear"></div>
+      <br />
+      
+      <% if booking.claimed? %>
+        <label style="font-size: 16px">This booking has been claimed.</label>
+      <% else %>
+        <% form_for :booking, :url => booking_path(booking), :html => {:method => :put} do |form| %>
+          <label style="font-size: 16px"><%= image_tag('exc.png', :style=> 'vertical-align: middle') %> verify that these information are correct before proceeding to claim</label>
+          <%= form.submit 'Claim', :style => "float: right"%>
+        <% end %>
+      <% end %>
+    </fieldset>
+  </p>
+<% end if !@bookings.empty? %>
+
+<%= link_to 'Back', bookings_path %>

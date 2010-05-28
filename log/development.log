@@ -397,3 +397,748 @@ Processing BookingsController#index (for 127.0.0.1 at 2010-05-27 14:18:40) [GET]
 Rendering template within layouts/application
 Rendering bookings/index
 Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;36;1mSQL (89.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 19:53:10) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 114ms (View: 112, DB: 91) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 19:53:20) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 19:53:26) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 19:53:35) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 19:53:45) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 69ms (View: 67, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 19:56:32) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"", "email"=>""}}
+Redirected to http://localhost:3000/bookings
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 19:56:32) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 19:56:35) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"123123", "email"=>""}}
+  [4;36;1mBooking Columns (314.3ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (79.2ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '123123') LIMIT 1[0m
+Redirected to http://localhost:3000/bookings
+Completed in 453ms (DB: 394) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 19:56:36) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 19:56:39) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"123123", "email"=>""}}
+  [4;36;1mBooking Columns (16.5ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '123123') LIMIT 1[0m
+Redirected to http://localhost:3000/bookings
+Completed in 22ms (DB: 17) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 19:56:39) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 19:57:06) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0198944490", "email"=>""}}
+  [4;36;1mBooking Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.4ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0198944490') LIMIT 1[0m
+Redirected to http://localhost:3000/bookings/1
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#show (for 127.0.0.1 at 2010-05-28 19:57:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mBooking Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.9ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering bookings/show
+Completed in 22ms (View: 15, DB: 2) | 200 OK [http://localhost/bookings/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 19:57:17) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0198944490", "email"=>"chocoberryshake@yahoo.com"}}
+  [4;36;1mBooking Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.3ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0198944490') LIMIT 1[0m
+Redirected to http://localhost:3000/bookings/1
+Completed in 8ms (DB: 2) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#show (for 127.0.0.1 at 2010-05-28 19:57:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mBooking Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.2ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering bookings/show
+Completed in 10ms (View: 3, DB: 2) | 200 OK [http://localhost/bookings/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 19:57:21) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"", "email"=>"chocoberryshake@yahoo.com"}}
+  [4;36;1mBooking Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.3ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`email` = 'chocoberryshake@yahoo.com') LIMIT 1[0m
+Redirected to http://localhost:3000/bookings/1
+Completed in 8ms (DB: 2) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#show (for 127.0.0.1 at 2010-05-28 19:57:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mBooking Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.2ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering bookings/show
+Completed in 10ms (View: 3, DB: 2) | 200 OK [http://localhost/bookings/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 19:57:32) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"", "email"=>"amir_snake88@yahoo.com"}}
+  [4;36;1mBooking Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.3ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`email` = 'amir_snake88@yahoo.com') LIMIT 1[0m
+Redirected to http://localhost:3000/bookings
+Completed in 8ms (DB: 2) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 19:57:32) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 19:59:47) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0198944490", "email"=>""}}
+  [4;36;1mBooking Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.3ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0198944490') LIMIT 1[0m
+Redirected to http://localhost:3000/bookings/1
+Completed in 8ms (DB: 2) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#show (for 127.0.0.1 at 2010-05-28 19:59:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mBooking Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.2ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering bookings/show
+Completed in 10ms (View: 3, DB: 2) | 200 OK [http://localhost/bookings/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:05:53) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0198944490", "email"=>""}}
+  [4;36;1mBooking Load (0.6ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0198944490' AND `bookings`.`claimed` = 0) [0m
+  [4;35;1mBooking Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+
+NameError (undefined local variable or method `results_bookings' for #<BookingsController:0x10449e300>):
+  app/controllers/bookings_controller.rb:15:in `create'
+
+Rendered rescues/_trace (34.5ms)
+Rendered rescues/_request_and_response (3.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:06:22) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0198944490", "email"=>""}}
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0198944490' AND `bookings`.`claimed` = 0) [0m
+Redirected to http://localhost:3000/bookings/results
+Completed in 5ms (DB: 1) | 302 Found [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#results (for 127.0.0.1 at 2010-05-28 20:06:22) [GET]
+Rendering template within layouts/application
+Rendering bookings/results
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #19 of app/views/bookings/results.html.erb:
+16: 
+17:     </fieldset>
+18:   </p>
+19: <% end if !@bookings.empty? %>
+
+    app/views/bookings/results.html.erb:19
+
+Rendered rescues/_trace (113.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#results (for 127.0.0.1 at 2010-05-28 20:07:08) [GET]
+Rendering template within layouts/application
+Rendering bookings/results
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #1 of app/views/bookings/results.html.erb:
+1: <% @bookings.each do |booking| %>
+2:   <p>
+3:     <fieldset>
+4:       <legend>Verify Information</legend>
+
+    app/views/bookings/results.html.erb:1
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#results (for 127.0.0.1 at 2010-05-28 20:07:51) [GET]
+Rendering template within layouts/application
+Rendering bookings/results
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #19 of app/views/bookings/results.html.erb:
+16: 
+17:     </fieldset>
+18:   </p>
+19: <% end if !@bookings.empty? %>
+
+    app/views/bookings/results.html.erb:19
+
+Rendered rescues/_trace (114.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#results (for 127.0.0.1 at 2010-05-28 20:08:06) [GET]
+Rendering template within layouts/application
+Rendering bookings/results
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/bookings/results]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#results (for 127.0.0.1 at 2010-05-28 20:08:33) [GET]
+Rendering template within layouts/application
+Rendering bookings/results
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #19 of app/views/bookings/results.html.erb:
+16: 
+17:     </fieldset>
+18:   </p>
+19: <% end if !@bookings.empty? %>
+
+    app/views/bookings/results.html.erb:19
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:08:53) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0198944490", "email"=>""}}
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0198944490' AND `bookings`.`claimed` = 0) [0m
+  [4;36;1mBooking Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+Redirected to http://localhost:3000/bookings/results
+Completed in 78ms (DB: 2) | 302 Found [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#results (for 127.0.0.1 at 2010-05-28 20:08:53) [GET]
+Rendering template within layouts/application
+Rendering bookings/results
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #19 of app/views/bookings/results.html.erb:
+16: 
+17:     </fieldset>
+18:   </p>
+19: <% end if !@bookings.empty? %>
+
+    app/views/bookings/results.html.erb:19
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#results (for 127.0.0.1 at 2010-05-28 20:09:01) [GET]
+Rendering template within layouts/application
+Rendering bookings/results
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #19 of app/views/bookings/results.html.erb:
+16: 
+17:     </fieldset>
+18:   </p>
+19: <% end if !@bookings.empty? %>
+
+    app/views/bookings/results.html.erb:19
+
+Rendered rescues/_trace (113.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#results (for 127.0.0.1 at 2010-05-28 20:09:07) [GET]
+Rendering template within layouts/application
+Rendering bookings/results
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #19 of app/views/bookings/results.html.erb:
+16: 
+17:     </fieldset>
+18:   </p>
+19: <% end if !@bookings.empty? %>
+
+    app/views/bookings/results.html.erb:19
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:09:13) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0198944490", "email"=>""}}
+  [4;35;1mBooking Load (0.4ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0198944490' AND `bookings`.`claimed` = 0) [0m
+Redirected to http://localhost:3000/bookings/results
+Completed in 5ms (DB: 1) | 302 Found [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#results (for 127.0.0.1 at 2010-05-28 20:09:13) [GET]
+Rendering template within layouts/application
+Rendering bookings/results
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #19 of app/views/bookings/results.html.erb:
+16: 
+17:     </fieldset>
+18:   </p>
+19: <% end if !@bookings.empty? %>
+
+    app/views/bookings/results.html.erb:19
+
+Rendered rescues/_trace (114.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#results (for 127.0.0.1 at 2010-05-28 20:10:00) [GET]
+Rendering template within layouts/application
+Rendering bookings/results
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #19 of app/views/bookings/results.html.erb:
+16: 
+17:     </fieldset>
+18:   </p>
+19: <% end if !@bookings.empty? %>
+
+    app/views/bookings/results.html.erb:19
+
+Rendered rescues/_trace (41.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:10:05) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0198944490", "email"=>""}}
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0198944490' AND `bookings`.`claimed` = 0) [0m
+Rendering template within layouts/application
+Rendering http://localhost:3000/bookings/results
+
+ActionView::MissingTemplate (Missing template http://localhost:3000/bookings/results.erb in view path app/views):
+  app/controllers/bookings_controller.rb:18:in `create'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:10:45) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0198944490", "email"=>""}}
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0198944490' AND `bookings`.`claimed` = 0) [0m
+Rendering template within layouts/application
+Rendering bookings/results
+  [4;36;1mBooking Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+Completed in 13ms (View: 5, DB: 2) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#update (for 127.0.0.1 at 2010-05-28 20:11:01) [PUT]
+  Parameters: {"commit"=>"Claim", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "id"=>"1"}
+  [4;35;1mBooking Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+  [4;36;1mBooking Load (0.7ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mBooking Update (48.9ms)[0m   [0;1mUPDATE `bookings` SET `updated_at` = '2010-05-28 12:11:01', `claimed` = 1 WHERE `id` = 1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/bookings
+Completed in 128ms (DB: 52) | 302 Found [http://localhost/bookings/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:11:01) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:11:43) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0135904846", "email"=>""}}
+  [4;36;1mBooking Load (0.5ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0135904846' AND `bookings`.`claimed` = 0) [0m
+Rendering template within layouts/application
+Rendering bookings/results
+  [4;35;1mBooking Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+Completed in 12ms (View: 7, DB: 2) | 200 OK [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:13:47) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0135904846", "email"=>""}}
+  [4;36;1mBooking Load (0.4ms)[0m   [0;1mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0135904846') [0m
+Rendering template within layouts/application
+Rendering bookings/results
+  [4;35;1mBooking Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `bookings`[0m
+Completed in 17ms (View: 11, DB: 2) | 200 OK [http://localhost/bookings]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#update (for 127.0.0.1 at 2010-05-28 20:13:51) [PUT]
+  Parameters: {"commit"=>"Claim", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "id"=>"3"}
+  [4;36;1mBooking Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+  [4;35;1mBooking Load (0.7ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`id` = 3) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBooking Update (0.3ms)[0m   [0mUPDATE `bookings` SET `updated_at` = '2010-05-28 12:13:51', `claimed` = 1 WHERE `id` = 3[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/bookings
+Completed in 10ms (DB: 3) | 302 Found [http://localhost/bookings/3]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:13:51) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:13:59) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0135904846", "email"=>""}}
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0135904846') [0m
+Rendering template within layouts/application
+Rendering bookings/results
+  [4;36;1mBooking Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:14:43) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0135904846", "email"=>""}}
+  [4;35;1mBooking Load (0.4ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0135904846') [0m
+Rendering template within layouts/application
+Rendering bookings/results
+  [4;36;1mBooking Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+Completed in 16ms (View: 10, DB: 2) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:15:06) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0135904846", "email"=>""}}
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0135904846') [0m
+Rendering template within layouts/application
+Rendering bookings/results
+  [4;36;1mBooking Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+Completed in 15ms (View: 10, DB: 2) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:15:44) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0135904846", "email"=>""}}
+  [4;35;1mBooking Load (0.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0135904846') [0m
+Rendering template within layouts/application
+Rendering bookings/results
+  [4;36;1mBooking Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:16:23) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:16:33) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:16:42) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:16:43) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:16:59) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:17:13) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:17:17) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:17:46) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:19:21) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"", "email"=>"chocoberryshake@yahoo.com"}}
+  [4;35;1mBooking Load (248.5ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`email` = 'chocoberryshake@yahoo.com') [0m
+Rendering template within layouts/application
+Rendering bookings/results
+  [4;36;1mBooking Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+Completed in 257ms (View: 4, DB: 250) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:19:30) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0198944490", "email"=>"chocoberryshake@yahoo.com"}}
+  [4;35;1mBooking Load (0.4ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0198944490') [0m
+Rendering template within layouts/application
+Rendering bookings/results
+  [4;36;1mBooking Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:20:00) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0198944490", "email"=>"chocoberryshake@yahoo.com"}}
+  [4;35;1mBooking Load (0.4ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0198944490') [0m
+Rendering template within layouts/application
+Rendering bookings/results
+  [4;36;1mBooking Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+Completed in 14ms (View: 8, DB: 2) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:20:04) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:20:14) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0135904846", "email"=>""}}
+  [4;35;1mBooking Load (0.4ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0135904846') [0m
+Rendering template within layouts/application
+Rendering bookings/results
+  [4;36;1mBooking Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+Completed in 11ms (View: 5, DB: 2) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:20:18) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:20:43) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:20:44) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"", "email"=>"ashaaribizz@gmail.com"}}
+  [4;35;1mBooking Load (26.6ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`email` = 'ashaaribizz@gmail.com') [0m
+Rendering template within layouts/application
+Rendering bookings/results
+  [4;36;1mBooking Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+Completed in 37ms (View: 6, DB: 28) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:20:57) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#create (for 127.0.0.1 at 2010-05-28 20:21:11) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"S5GvtG907VeFE+RmYcuCtA9bNJpT+ch5wu8ZoCl6nbs=", "booking"=>{"phone"=>"0123456789", "email"=>""}}
+  [4;35;1mBooking Load (22.7ms)[0m   [0mSELECT * FROM `bookings` WHERE (`bookings`.`phone` = '0123456789') [0m
+Rendering template within layouts/application
+Rendering bookings/results
+  [4;36;1mBooking Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `bookings`[0m
+Completed in 34ms (View: 6, DB: 24) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:21:18) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/bookings]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BookingsController#index (for 127.0.0.1 at 2010-05-28 20:21:44) [GET]
+Rendering template within layouts/application
+Rendering bookings/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/bookings]
